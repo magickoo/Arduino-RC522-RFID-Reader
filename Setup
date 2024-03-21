@@ -26,3 +26,5 @@ void loop() {
             // Dump debug info about the card; PICC_HaltA() is automatically called
             mfrc522.PICC_DumpToSerial(&(mfrc522.uid));
 }
+**Extra Note**
+If you get any communication failed error, that’s because our serial baud rate is too slow. Increase the baud rate to 115200 in the code and it will resolve the issue. Here in the data dump, we can see that the PICC type is MIFARE 1KB. That means the tag contains a MIFARE chip with a memory of 1KB.
