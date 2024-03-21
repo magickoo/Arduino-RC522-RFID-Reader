@@ -1,6 +1,12 @@
 The VCC and GND pins of the module are connected to the 3.3V and GND pins of Arduino respectively. 
-The Reset pin is connected to the D9 and SS, MOSI, MISO, and SCK pins are connected to the D10, D11, D12, and D13 pins of the Arduino respectively. 
-The SS and RST pins are configurable and can be connected to any other digital pins on the Arduino.
+The Reset pin is connected to the D9 and SS(SDA), MOSI, MISO, and SCK pins are connected to the D10, D11, D12, and D13 pins of the Arduino respectively. 
+The SS(SDA) and RST pins are configurable and can be connected to any other digital pins on the Arduino.
+Pin Config
+RST-> 9
+SDA -> 10
+MOSI -> 11
+MISO -> 12
+SCK -> 13
 
 // DumpInfo example from the MFRC522 library
 
